@@ -45,7 +45,17 @@ input {
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
+
 }
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:  #fffbf7;
+}
+
 .header {
     margin: 40px 20px 0;
     font-size: 0;
@@ -57,9 +67,14 @@ input {
     margin: 0 15px;
 }
 
+.header ul {
+
+} 
+
 .header > * {
     display: inline-block;
     font-size: 16px;
+    vertical-align: middle;
 }
 
 header .logo {
@@ -80,11 +95,11 @@ header .actions {
 
 .header .actions button {
     color: #ffffff;
-    background color: #67b54b;
-    border
-    border-radius:
-    padding: 12px 14px:
-    margin left: 10 px;
+    background-color: #67b54b;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 14px;
+    margin-left: 10px;
 
 }
 
@@ -93,8 +108,13 @@ header .actions {
 }
 
 .main {
-    margin-top: 150 px;
+    margin-top: 280 px;
     text-align: center;
+}
+
+.main .imagen-propiedades {
+    width: 80%;
+    max-width: 1000px;
 }
 
 img {
@@ -102,7 +122,71 @@ img {
     max-width: 600px;
 }
 
-.main .imagen-propiedades {
-    width: 80%;
-    max-width: 1000px;
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px;
+    margin-bottom: 100px auto;
+    align-items: center
+
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+    
+}
+
+.publish {
+    padding: 10px;
+    flex: 1;
+}
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    font-weight: 900;
+}
+
+.publish .texto-publish {
+    color: #343434;
+}
+
+.publish .texto-gris-publish {
+
+}
+
+.publish .signup-form input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+    height: 75%;
+    border-radius: 8px;
+}
+
+.publish .signup-form button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 6px 20px;
+    margin-left: -10px;
+    height: 100%;
+}
+
+.publish .signup-form {
+    height: 55px;
 }
