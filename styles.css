@@ -190,3 +190,65 @@ img {
 .publish .signup-form {
     height: 55px;
 }
+
+.features {
+display: grid;
+background-color: #025157;
+height: 660px;
+grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+padding: 5%, 10%;
+
+}
+
+.feature-card {
+margin: 0 15px 30px;
+border-radius: 5px;
+background: #ffffff;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow: hidden;
+}
+
+.feature-content {
+padding: 30px 20px 40px 40px;
+flex:2;
+}
+
+feature-content h3{
+font-size: 24px;
+color: #343434;
+font-weight: 400;
+}
+
+feature-content p{
+
+}
+
+
+feature-content-image {
+
+}
+
+feature-content-image img {
+    height: 40px;
+    margin: 0;
+    
+}
+
+.feature-image {
+    flex: 1;
+    position: relative;
+}
+
+.feture-image img {
+width: 200px;
+position: absolute;
+top: 90px;
+left: 30px;
+transition: left 0.5s;
+}
+
+feature-image img:hover {
+left: 0;
+}
